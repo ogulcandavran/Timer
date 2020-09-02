@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>TIMER</h3>
+    <svg id="svg_main" height="800" width="1500">
+      <circle
+        id="circle"
+        r="320"
+        cx="50%"
+        cy="50%"
+        fill="transparent"
+        stroke="#fc9571"
+        stroke-width="40"
+      />
+    </svg>
+    <div class="container">
+      <input id="duration" type="number" value="30" autofocus />
+      <div class="container__buttons">
+        <button id="startButton" class="button">
+          <i class="fas fa-play"></i>
+        </button>
+        <button id="stopButton" class="button">
+          <i class="fas fa-pause"></i>
+        </button>
+        <button id="resetButton" class="button">
+          <i class="fas fa-redo-alt"></i>
+        </button>
+      </div>
+    </div>
+    <div id="err"></div>
+    <script src="timer.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
